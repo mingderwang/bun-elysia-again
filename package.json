@@ -1,0 +1,21 @@
+{
+  "name": "bun-on-vercel",
+  "type": "module",
+  "scripts": {
+    "start": "bun run ./src/main.ts",
+    "dev": "bun run --watch ./src/main.ts",
+    "build": "bun-vercel ./src/main.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "bun-vercel": "^1.0.0-alpha.5",
+    "drizzle-kit": "^0.20.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bun": "^1.0.15",
+    "drizzle-orm": "^0.29.1"
+  }
+}
