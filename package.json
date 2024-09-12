@@ -1,6 +1,6 @@
 {
   "name": "bun-on-vercel",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "type": "module",
   "engines": {
     "node": "18.x"
@@ -19,7 +19,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@elysiajs/swagger": "^1.1.1",
     "bun": "^1.0.15",
-    "drizzle-orm": "^0.29.1"
+    "drizzle-orm": "^0.29.1",
+    "elysia": "^1.1.12"
   }
 }
