@@ -1,10 +1,11 @@
-import { Elysia } from 'elysia'
-import { swagger } from '@elysiajs/swagger'
+import { serve } from "bun";
 
-new Elysia()
-    .get('/', () => 'Hi')
-    .post('/hi', () => 'From Post')
-    .put('/hi', () => 'From Put')
-    .route('M-SEARCH', '/hi', () => 'Custom Method')
-    .use(swagger())
-    .listen(3000)
+serve({
+  fetch(request) {
+    return new Response("Hello, world!");
+  },
+  port: 3000,
+});
+
+console.log("Server running on http://localhost:3000");
+
